@@ -1725,6 +1725,16 @@ header .wishlist-btn {
             transform: scale(1.03);
             border-bottom-color: var(--primary-pink);
         }
+
+        /* إخفاء صور قسم "من نحن" (About) على شاشات الجوال */
+@media (max-width: 768px) {
+  #about .about-media-wrapper {
+    display: none !important;
+  }
+  .hero-left-visual {
+    display: none !important;
+  }
+}
     }
     /* ==========================================
        10. RESPONSIVE DESIGN
