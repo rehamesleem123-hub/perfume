@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfume Brand | Luxury Fragrances</title>
-
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/perfume.png">
 
@@ -15,6 +16,7 @@
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   
   <style>
     :root {
@@ -166,9 +168,8 @@
       font-family: var(--font-serif);
       font-size: 1.8rem;
       color: var(--primary-pink);
-      font-weight: 700;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 1.5px;
       line-height: 1;
     }
 
@@ -1794,7 +1795,7 @@ header .wishlist-btn {
 </div>
     <!-- Navigation Bar -->
     <header>
-      <a href="#" class="clean-pink-logo">PERFUME</a>
+      <a href="#" class="clean-pink-logo">Scentia</a>
       
       <!-- زر القائمة (الهامبرغر) للموبايل -->
     <button class="menu-toggle" id="menuToggle">
@@ -1969,7 +1970,7 @@ header .wishlist-btn {
 
 
         <div class="products-container" id="productsContainer">
-          <div class="products-grid" id="sliderTrack">
+          <div class="products-grid owl-carousel" id="sliderTrack">
             
             <!-- العطر 1: YSL Libre -->
             <div class="product-card" data-name="Rose Divine" data-price="129.99">
@@ -2336,7 +2337,7 @@ header .wishlist-btn {
       <div class="footer-grid">
         
         <div class="footer-brand">
-          <a href="#" class="clean-pink-logo">PERFUME</a>
+          <a href="#" class="clean-pink-logo"></a>
           <p>Crafting memories through unforgettable scents. Designed for elegance, softness, and sophistication.</p>
           <div class="social-icons">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -2387,6 +2388,10 @@ header .wishlist-btn {
 <button class="scroll-top-btn" id="scrollTopBtn" title="Go to top">
     <i class="fas fa-chevron-up"></i>
 </button>
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script>
   document.addEventListener("DOMContentLoaded", () => {
   const userIcon = document.getElementById("userIcon");
@@ -2484,6 +2489,33 @@ if (menuToggle && navMenu) {
         }
     });
 }
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop:true,
+    nav:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3500,
+    hautoplayHoverPause: true,
+    response:{
+      0:{
+       items:1
+
+      }
+      ,768:{
+        items:2
+      }
+
+      ,1024:{
+        items:4
+      }
+    }
+  
+  });
+});
+
+
 </script>
 </body>
 </html>
