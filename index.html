@@ -6,6 +6,8 @@
   <title>Perfume Brand | Luxury Fragrances</title>
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/perfume.png">
 
@@ -2123,28 +2125,28 @@ header .wishlist-btn {
   <div class="why-us-grid">
     
     <!-- Feature 1 -->
-    <div class="why-card">
+    <div class="why-card" data-aos="fade-up" data-aos-duration="2000">
       <div class="why-number">01</div>
       <h3 class="why-card-title">Rare Essence Extracts</h3>
       <p class="why-card-desc">Sourced directly from historical flower fields, capturing pure and untamed natural aromas.</p>
     </div>
 
     <!-- Feature 2 -->
-    <div class="why-card">
+    <div class="why-card" data-aos="fade-up" data-aos-duration="2000">
       <div class="why-number">02</div>
       <h3 class="why-card-title">All-Day Longevity</h3>
       <p class="why-card-desc">High-concentration formulas designed to bloom softly on your skin for hours.</p>
     </div>
 
    <!-- Feature 3 (Updated Text) -->
-<div class="why-card">
+<div class="why-card" data-aos="fade-up" data-aos-duration="2000">
   <div class="why-number">03</div>
   <h3 class="why-card-title">100% Original Brands</h3>
   <p class="why-card-desc">Guaranteed authentic luxury perfumes, curated directly from official fashion houses to your doorstep.</p>
 </div>
 
     <!-- Feature 4 -->
-    <div class="why-card">
+    <div class="why-card" data-aos="fade-up" data-aos-duration="2000">
       <div class="why-number">04</div>
       <h3 class="why-card-title">Try Before You Buy</h3>
       <p class="why-card-desc">Complimentary 5ml discovery samples included with every full bottle order.</p>
@@ -2217,7 +2219,8 @@ header .wishlist-btn {
       </div>
 
       <div class="testimonials-grid">
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
           <i class="fa-solid fa-quote-right quote-icon"></i>
           <div>
             <div class="testimonial-header">
@@ -2233,7 +2236,8 @@ header .wishlist-btn {
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
           <i class="fa-solid fa-quote-right quote-icon"></i>
           <div>
             <div class="testimonial-header">
@@ -2249,7 +2253,8 @@ header .wishlist-btn {
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
           <i class="fa-solid fa-quote-right quote-icon"></i>
           <div>
             <div class="testimonial-header">
@@ -2394,6 +2399,10 @@ header .wishlist-btn {
 
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   <script>
   document.addEventListener("DOMContentLoaded", () => {
   const userIcon = document.getElementById("userIcon");
