@@ -52,7 +52,7 @@
 
     body {
       font-family: var(--font-main);
-      background-color: var(--bg-outer);
+      background-color: var(--white);
       color: var(--text-dark);
       display: flex;
       justify-content: center;
@@ -163,6 +163,7 @@
       justify-content: space-between;
       align-items: center;
       z-index: 20;
+      background-color: var(--white);
     }
 
     .clean-pink-logo {
@@ -249,6 +250,7 @@
       padding: 30px 50px 30px;
       position: relative;
       min-height: 500px;
+      background-color: var(--white);
     }
 
     .hero-grid {
@@ -1205,7 +1207,7 @@ header .wishlist-btn {
 
   .why-us-section {
     padding: 70px 20px;
-    background-color: var(--pink-ultra-light);
+    background-color:var(--white);
     border-top: 1px solid rgba(231, 145, 169, 0.15);
     border-bottom: 1px solid rgba(231, 145, 169, 0.15);
     font-family: var(--font-main);
@@ -1246,7 +1248,7 @@ header .wishlist-btn {
   }
 
   .why-card {
-    background: var(--bg-card);
+    background: var(--white);
     padding: 30px 20px;
     border-radius: 20px;
     border: 1px solid rgba(243, 167, 187, 0.4);
@@ -1258,10 +1260,11 @@ header .wishlist-btn {
   }
 
   .why-card:hover {
-    background: var(--white);
+    background: var(--pink-ultra-light);
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(231, 145, 169, 0.12);
     border-color: var(--primary-pink);
+    transition: all 0.7s ease-in-out;
   }
 
   .why-number {
